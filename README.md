@@ -1,14 +1,22 @@
 # ai-sales-consultant · AI 销售顾问（开源版）
 
-一个**零代码起步、可本地运行**的 AI 销售顾问模板。把「会说话的店长」固化成提示词 + 工作流，帮美业/教培/本地生活门店做私域转化、客户分层和自动跟单。
+零代码起步、可本地运行、可一键部署的 AI 销售顾问模板。把「会说话的店长」固化成提示词 + 工作流，帮**美业 / 教培 / 电商 / 餐饮**门店做私域转化、客户分层和自动跟单。
 
 > 设计原则：**不锁死任何一家模型**。默认走 Grok（免费路由 Claude），本地运行版支持 OpenAI / Anthropic / xAI 多后端，哪家有 key 用哪家。
 
-## 它解决啥
+## 免费版 vs 付费进阶包
 
-门店不是没客人，是客人在私信里聊着聊着就凉了。这个项目把「首咨 → 价格异议 → 催到店 → 办卡回购」的话术和跟单节奏固化下来，老板不用守手机也能接住每一个咨询。
+| | 免费版（本仓库）| 付费进阶包 ¥39–99 |
+|---|---|---|
+| 覆盖行业 | 美业 | 美业 + 教培 + 电商 + 餐饮 全套 |
+| 话术模板 | 4 套基础场景 | 每行业 6+ 套分场景话术 |
+| 运行方式 | 本地脚本 / Grok Bot | 附 Web 演示页（Streamlit）|
+| 部署 | 自己折腾 | 一键部署教程 + 视频 |
+| 支持 | README + issue | 私域答疑群 |
 
-## 快速开始
+付费包挂 Gumroad，买了自动发，**不靠任何内容号引流**——项目被搜到靠 GitHub 搜索和 awesome 列表，转化发生在产品页里。
+
+## 快速开始（本地）
 
 ```bash
 git clone <你的仓库地址>
@@ -25,38 +33,61 @@ echo "客户：问完价格没回" | python src/consultant.py
 
 强制指定后端：`BACKEND=openai python src/consultant.py "..."`
 
+无 key 也能用：把需求丢进 **Grok Bot**（让它路由到 Claude Opus），系统提示词在 `agent/system_prompt.md`，行业资料在 `niche/`。
+
+## 一键部署（可选 · 带返佣）
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app?referralCode=你的返佣码)
+
+点按钮用 Railway 一键部署 Web 演示页，**别人部署你拿 affiliate 返佣**。把 `你的返佣码` 换成自己的 Railway referral 码即可。
+
 ## 目录结构
 
 ```
 ai-sales-consultant/
 ├─ README.md                # 本文件
+├─ PREMIUM.md               # 付费进阶包说明 + 购买链接
 ├─ agent/
-│  └─ system_prompt.md      # 销售顾问的系统提示词（核心）
+│  └─ system_prompt.md      # 销售顾问系统提示词（核心）
 ├─ workflows/
 │  └─ routines.md           # Grok Bot 的 24h 自动工作流
-├─ prompts/                 # 分场景话术模板（可直接抄）
+├─ prompts/                 # 分场景话术模板（美业，可直接抄）
 │  ├─ 01_首咨.md
 │  ├─ 02_价格异议.md
 │  ├─ 03_催到店.md
 │  └─ 04_办卡回购.md
-├─ niche/
-│  └─ beauty/
-│     └─ profile.md         # 美业门店资料模板（项目/价格/常见问题）
+├─ niche/                   # 各行业的门店资料模板（喂 Agent 当长期记忆）
+│  ├─ beauty/        profile.md
+│  ├─ education/     profile.md   # 教培
+│  ├─ ecommerce/     profile.md   # 电商
+│  └─ restaurant/    profile.md   # 餐饮
 ├─ examples/
 │  └─ diagnostic_case.md    # 一个脱敏诊断案例
+├─ app.py                   # 一键部署用的 Web 演示页（Streamlit）
 ├─ src/
 │  └─ consultant.py         # 最小可运行脚本（多后端）
 ├─ requirements.txt
 └─ .env.example
 ```
 
-## 怎么变现（开源 → 引流 → 卖服务）
+## 怎么变现（产品型开源，不引流）
 
-1. 发 repo，写「我做开源 AI 销售顾问的复盘」蹭 AI 资讯流量；
-2. 美业老板/AI 玩家来 star、fork，变成你的获客漏斗；
-3. 顺手卖：搭建费（¥800–2000）+ 月费代运营（¥500–1500），或按成交额抽 3–5%。
+不需要发抖音 / 小红书做号，靠产品本身转化：
 
-> 开源是「卖服务」的放大器 + 护城河：先攒信任和流量，再转化付费客户。
+1. **GitHub Sponsors / 爱发电**：README 挂赞助入口，用的人直接月捐。
+2. **卖付费包**：Gumroad 挂进阶版（多行业 + Web 演示 + 部署教程），被动收入。
+3. **部署返佣**：上面的 Railway 按钮，有人部署你吃分成。
+4. **被动曝光**：提交到 `awesome-ai-agents`、`awesome-chatgpt-prompts` 等列表，AI agent 类现在搜索量大，自然来人。
+
+> 你只管把项目做好、被人搜到，转化发生在产品页里，不用你主动发一条笔记。
+
+## 支持这个项目
+
+- GitHub Sponsors：https://github.com/sponsors/你的GitHub名
+- 爱发电：https://afdian.com/a/你的ID
+- 付费进阶包：https://yourname.gumroad.com/l/ai-sales-consultant
+
+（把上面三处换成你自己的账号即可。）
 
 ## 许可证
 
