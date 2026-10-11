@@ -93,13 +93,10 @@ ai-sales-consultant/
 
 如果你用下面工具部署或体验本项目，从我的链接注册，我能拿到佣金（你的价格不变）：
 
-- [Cursor](https://cursor.com/你的referral) — AI 代码编辑器（写提示词、改脚本）
-- [Vercel](https://vercel.com/你的referral) — 一键部署本项目演示页 app.py
-- [Railway](https://railway.app/?ref=你的referral) — 云部署，也跑本项目
-- [腾讯云](https://cloud.tencent.com/referral?inviter=你的ID) — 国内云算力 / 部署
-- [阿里云](https://www.aliyun.com/你的affiliate) — 国内云服务器
+- [腾讯云](https://cloud.tencent.com/act/cps/redirect?redirect=2446&cps_key=060541d930fb80f0798c58b66cc2abe3&from=console) — 国内云算力 / 部署（推荐，中文全搞定）
+- 阿里云 — 国内云服务器（专属链接待补，去 aliyun.com 搜「推广赚佣」拿）
 
-> 把上面的「你的referral / 你的ID / 你的affiliate」换成你在各平台 affiliate / referral 计划的专属链接即可。有人点进去注册，你就拿佣金——零运营、纯被动，和这个仓库天然配合。
+> 有人从上面链接点进去注册/消费，佣金就进对应账户——零运营、纯被动，和这个仓库天然配合。
 
 ## 许可证
 
