@@ -89,6 +89,18 @@ ai-sales-consultant/
 
 （Sponsors 已填你的 GitHub 名 AIlsis；爱发电 ID 换成你自己的，去 afdian.com 注册即得。Gumroad / Railway 是英文平台，嫌麻烦可先不弄，不影响爱发电变现。）
 
+## 推荐工具（affiliate 返佣）
+
+如果你用下面工具部署或体验本项目，从我的链接注册，我能拿到佣金（你的价格不变）：
+
+- [Cursor](https://cursor.com/你的referral) — AI 代码编辑器（写提示词、改脚本）
+- [Vercel](https://vercel.com/你的referral) — 一键部署本项目演示页 app.py
+- [Railway](https://railway.app/?ref=你的referral) — 云部署，也跑本项目
+- [腾讯云](https://cloud.tencent.com/referral?inviter=你的ID) — 国内云算力 / 部署
+- [阿里云](https://www.aliyun.com/你的affiliate) — 国内云服务器
+
+> 把上面的「你的referral / 你的ID / 你的affiliate」换成你在各平台 affiliate / referral 计划的专属链接即可。有人点进去注册，你就拿佣金——零运营、纯被动，和这个仓库天然配合。
+
 ## 许可证
 
 MIT —— 随便用、随便改、商用也行，留个署名就好。
