@@ -84,7 +84,7 @@ ai-sales-consultant/
 ## 支持这个项目
 
 - GitHub Sponsors：https://github.com/sponsors/Allsis
-- 爱发电（中文，主推）：https://afdian.com/a/流量45
+- 爱发电（中文，主推）：https://afdian.com/a/_bead8
 - 付费进阶包：爱发电挂付费内容（中文，推荐）或 Gumroad（英文）：https://yourname.gumroad.com/l/ai-sales-consultant
 
 （Sponsors 已填你的 GitHub 名 Allsis；爱发电 ID 换成你自己的，去 afdian.com 注册即得。Gumroad / Railway 是英文平台，嫌麻烦可先不弄，不影响爱发电变现。）
